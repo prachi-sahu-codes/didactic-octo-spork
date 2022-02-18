@@ -5,9 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The Basic Language of the Web: HTML</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
+    <header class="main-header">
       <h1>📘 The Code Magazine</h1>
       <nav>
         <a href="trial.html">Blog</a>
@@ -30,7 +31,9 @@
         <!-- If image is on another folder named img
         <img src="img/photo.jpg" alt="pic"/>-->
 
-        <p>Posted by <strong>Laura Jones</strong> on Monday, June 21st 2027</p>
+        <p class="author">
+          Posted by <strong>Laura Jones</strong> on Monday, June 21st 2027
+        </p>
         <img
           src="https://www.udacity.com/blog/wp-content/uploads/2020/06/HTML_Blog-scaled.jpeg"
           alt="HTML code on screen"
@@ -96,25 +99,27 @@
     <aside>
       <!-- it is used for some secondary info that compliment the info of main part of the page-->
       <h4>Related posts</h4>
-      <ul>
+      <ul class="blog">
         <li>
-          <img src="img/a.jpg" alt="profile pic" width="75px" height="75px" />
+          <img src="img/a.jpg" alt="profile pic" width="75" height="75" />
           <a href="#">How to Learn Web Development</a>
-          <p>By Jonas Schmedtmann</p>
+          <p class="related-author">By Jonas Schmedtmann</p>
         </li>
         <li>
-          <img src="img/b.jpg" alt="profile pic" width="75px" height="75px" />
+          <img src="img/b.jpg" alt="profile pic" width="75" height="75" />
           <a href="#">The Unknown Powers of CSS</a>
-          <p>By Prachi Sahu</p>
+          <p class="related-author">By Prachi Sahu</p>
         </li>
         <li>
-          <img src="img/c.jpg" alt="profile pic" width="75px" height="75px" />
+          <img src="img/c.jpg" alt="profile pic" width="75" height="75" />
           <a href="#">Why Javascript is Awesome</a>
-          <p>By Jim Dillon</p>
+          <p class="related-author">By Jim Dillon</p>
         </li>
       </ul>
     </aside>
 
-    <footer>Copyright &copy; 2027 by The Code Magazine.</footer>
+    <footer>
+      <p id="copyright">Copyright &copy; 2027 by The Code Magazine.</p>
+    </footer>
   </body>
 </html>
